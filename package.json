@@ -1,0 +1,12 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+      "server": "cd server && npm run watch",
+      "client": "cd client && npm start",
+      "watch": "yarn server & yarn client",
+      "deploy": "npm run build --prefix client && npm run start --prefix server"
+  }
+}
